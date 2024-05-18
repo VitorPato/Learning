@@ -70,8 +70,7 @@ int main(void)
 {   
     char array[MAX_SIZE];
     get_line(array, MAX_SIZE);
-    printf("%s\n", array);
     char *new_str = string_replace_tabs_with_spaces(array);
-    printf("%s\n", new_str);
+    printf("%s", new_str);
     free(new_str);
 }                               
